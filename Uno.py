@@ -327,7 +327,7 @@ def play_uno(numHumans, numRobots):
                     for i in range(4):
                         if deck.is_empty():
                             deck.reset_deck(pile)
-                            playerList[(currentPlayerNum + 1) % numPlayers].draw_card(deck)
+                        playerList[(currentPlayerNum + 1) % numPlayers].draw_card(deck)
 
                 else:       #If player is robot
                     cardDict = {
